@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "Manuelle Website",
+			"path": "../Manuelle Website"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "login tester"
+	}
+}

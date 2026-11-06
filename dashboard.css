@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: linear-gradient(
+        180deg,
+        #fff8fb,
+        #fff0f6
+    );
+
+    color: #333;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 60px;
+}
+
+
+.logo {
+    width: 120px;
+    height: auto;
+    display:block;
+    
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 15px rgba(232,139,181,0.35));
+    transition:0.4s ease;
+
+}
+.logo:hover {
+    transform: scale(1.08);
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin: 15px 0 5px;
+    color: #e88bb5;
+    text-shadow:
+    0 5px 15px rgba (232,139,181,0.3);
+}
+
+
+.hero p {
+    font-size: 20px;
+    color: #777;
+}
+
+.hero button {
+    position: relative;
+    overflow: hidden;
+
+    margin-top: 25px;
+    padding: 15px 38px;
+
+    background: white;
+    color: #e88bb5;
+
+    border: 2px solid #e88bb5;
+    border-radius: 50px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+
+    box-shadow: 0 8px 20px rgba(232,139,181,0.2);
+}
+.hero button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        circle,
+        #ff9a9e 0%,
+        #f6a6c9 100%
+    );
+
+    transform: translate(-50%, -50%);
+
+    transition: width 0.5s ease,
+                height 0.5s ease;
+
+    z-index: 0;
+}
+.hero button:hover::before {
+
+    width: 320px;
+    height: 320px;
+
+}
+.hero button span {
+    position: relative;
+    z-index: 1;
+}
+
+.hero button:hover {
+
+    color: white;
+
+    transform: translateY(-5px) scale(1.05);
+
+    box-shadow: 0 15px 35px rgba(232,139,181,0.4);
+
+}
+
+.welcome-message {
+    position: absolute;
+    top: 25px;
+    left:50px;
+}
+
+.welcome-message h2 {
+    font-size: 18px;
+    color: #e88bb5;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    display:flex;
+    justify-content: flex-end;
+    gap: 40px;
+
+    padding: 25px 50px;
+}
+
+.navbar a {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    color: #555;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s ease;
+
+}
+
+.navbar a:hover {
+    color: #e88bb5;
+    transform:translateY(-3px);
+}
+
+.canvas-section {
+    margin: 80px 50px;
+}
+
+
+.canvas-section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+
+.canvas-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.canvas-card {
+    width: 250px;
+    height: 180px;
+
+    background: linear-gradient(135deg, #fff, #fff0f6);
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    border: 1px solid rgba(255,182,193,0.3);
+}
+
+
+.canvas-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(255,182,193,0.35);
+}
+
+.canvas-card h3 {
+    font-size: 22px;
+    color: #e88bb5;
+    margin-bottom: 10px;
+}
+
+
+.canvas-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.create-card {
+     background: linear-gradient(135deg, #ffd6e8, #fff0f6);
+}
+
+.create-card h3 {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 24px;
+    margin-top: 15px;
+    color: #666;
+    font-weight:500;
+    
+}
+
+#changing-word {
+    color: #e88bb5;
+    font-weight: 700;
+
+    display: inline-block;
+
+    animation: wordGlow 2s infinite;
+}
+
+.about-section {
+
+    margin: 100px 50px;
+
+    text-align: center;
+
+}
+
+
+.about-section h2 {
+
+    font-size: 34px;
+
+    color: #e88bb5;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+.about-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.about-card {
+
+    width: 280px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    transition: 0.4s ease;
+
+    cursor: pointer;
+
+}
+
+
+
+.about-card:hover {
+
+    transform: translateY(-10px) scale(1.03);
+
+}
+
+
+.create:hover {
+
+    border: 2px solid #ff9ecb;
+
+    box-shadow:
+    0 15px 35px rgba(255,158,203,0.45);
+
+}
+
+.grow:hover {
+
+    border: 2px solid #a8d8a8;
+
+    box-shadow:
+    0 15px 35px rgba(168,216,168,0.45);
+
+}
+
+.connect:hover {
+
+    border: 2px solid #c8a7ff;
+
+    box-shadow:
+    0 15px 35px rgba(200,167,255,0.45);
+
+}
+
+
+
+.about-card h3 {
+
+    color: #e88bb5;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+}
+
+
+
+.about-card p {
+
+    color: #666;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+}
+.footer {
+
+    margin-top: 100px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #fff0f6;
+
+    border-top: 1px solid rgba(232,139,181,0.2);
+
+}
+
+
+.footer h3 {
+
+    color: #e88bb5;
+
+    font-size: 28px;
+
+}
+
+
+.footer p {
+
+    color: #777;
+
+}
+
+
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 20px;
+
+}
+
+
+
+.footer-links a {
+
+    color: #555;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+
+}
+
+
+
+.footer-links a:hover {
+
+    color: #e88bb5;
+
+}
+
+
+
+.copyright {
+
+    font-size: 13px;
+
+}
+
+@keyframes wordGlow {
+
+    0% {
+        transform: scale(1);
+    }
+
+
+    50% {
+        transform: scale(1.08);
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform:translateY(0px)
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0x);
+    }
+}
+
+/*Logout Button Styling*/
+.logout-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+
+    padding: 12px 24px;
+    background: white;
+    color: #e88bb5;
+
+    border: 2px solid #e88bb5;
+    border-radius: 50px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(232, 139, 181, 0.25);
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #e88bb5;
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(232, 139, 181, 0.45);
+}

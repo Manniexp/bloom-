@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomCanvas</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="welcome-message">
+        <h2 id="greeting">Good Morning, Creator!🌞⋆.ೃ࿔🌸*:･</h2>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="dashboard.html">Home</a>
+        <a href="feed.html">Bloom</a>
+        <a href="create.html">Create</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="hero">
+        <a href="dashboard.html">
+            <img src="https://www.image2url.com/r2/default/images/1792295113555-4f1f8295-fd7d-4ae6-a773-64bc879cab3f.png" class="logo" alt="Bloom Logo">
+        </a>
+
+        <h1>Bloom</h1>
+
+        <p class="tagline">
+            Your creativity. Your <span id="changing-word">art</span>. Your community.
+        </p>
+
+        <button><span>Start Creating</span></button>
+    </div>
+
+    <!-- Canvas Section -->
+    <section class="canvas-section">
+        <h2>Your Canvas</h2>
+
+        <div class="canvas-container">
+            <div class="canvas-card create-card">
+                <h3>+</h3>
+                <p>Create New Canvas</p>
+            </div>
+
+            <div class="canvas-card">
+                <h3>My Artwork</h3>
+                <p>Your creations will appear here</p>
+            </div>
+
+            <div class="canvas-card">
+                <h3>Recent Project</h3>
+                <p>Keep growing your ideas</p>
+            </div>
+        </div>
+
+        <section class="about-section">
+            <h2>🌸 Grow with Bloom 🌸</h2>
+
+            <div class="about-container">
+                <div class="about-card create">
+                    <h3>🎨 Create</h3>
+                    <p>Turn your ideas into art, writing, music, games, and projects.</p>
+                </div>
+
+                <div class="about-card grow">
+                    <h3>🌱 Grow</h3>
+                    <p>Save every creation and watch your creativity bloom over time.</p>
+                </div>
+
+                <div class="about-card connect">
+                    <h3>🤝 Connect</h3>
+                    <p>Share your creations with a supportive creative community.</p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <h3>🌸BLOOM🌸</h3>
+                <p>Your creativity. Your art. Your community</p>
+
+                <div class="footer-links">
+                    <a href="dashboard.html">Home</a>
+                    <a href="create.html">Create</a>
+                    <a href="profile.html">Profile</a>
+                </div>
+                <p class="copyright">© 2026 Bloom. Grow your creativity.</p>
+            </footer>
+        </section>
+    </section>
+
+    <!-- Logout button pinned to the bottom right -->
+    <button id="logout-button" class="logout-btn">Logout 🌸</button>
+
+    <!-- JS Module for Firebase & Logout functionality -->
+    <script type="module" src="dashboard.js"></script>
+</body>
+
+</html>

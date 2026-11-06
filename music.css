@@ -1,0 +1,548 @@
+body {
+
+
+    margin: 0;
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+    background: linear-gradient(
+        180deg,
+        #fff8fb,
+        #fff0f6
+    );
+
+
+    color: #333;
+
+
+}
+
+
+
+
+
+
+/*  Header */
+
+
+.header {
+
+
+    padding: 25px 50px;
+
+
+}
+
+
+.home-logo {
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    gap: 12px;
+
+
+    text-decoration: none;
+
+
+}
+
+
+.logo {
+
+
+    width: 60px;
+
+
+    animation: float 3s ease-in-out infinite;
+
+
+    transition: .3s ease;
+
+
+}
+
+
+.logo:hover {
+
+
+    transform: scale(1.1);
+
+
+}
+
+
+.home-logo span {
+
+
+    font-size: 32px;
+
+
+    font-weight: 600;
+
+
+    color: #e88bb5;
+
+
+}
+
+
+
+
+
+
+/*  Hero */
+
+
+.music-hero {
+
+
+    text-align: center;
+
+
+    margin-top: 30px;
+
+
+    animation: fadeUp .8s ease;
+
+
+}
+
+
+.music-hero h1 {
+
+
+    font-size: 60px;
+
+
+    color: #e88bb5;
+
+
+    margin-bottom: 10px;
+
+
+}
+
+
+.music-hero p {
+
+
+    font-size: 24px;
+
+
+    color: #777;
+
+
+}
+
+
+
+
+
+
+/* Main Container */
+
+
+.music-container {
+
+
+    width: 80%;
+
+
+    max-width: 900px;
+
+
+    margin: 40px auto;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+}
+
+
+
+
+
+
+/* Upload Box */
+
+
+.upload-box {
+
+
+    width: 100%;
+
+
+    height: 220px;
+
+
+    border: 3px dashed #f3a6c8;
+
+
+    border-radius: 30px;
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+    transition: .3s ease;
+
+
+}
+
+
+.upload-box:hover {
+
+
+    background: #fff0f6;
+
+
+    transform: translateY(-6px);
+
+
+    box-shadow: 0 12px 30px rgba(232,139,181,.25);
+
+
+}
+
+
+.upload-box h2 {
+
+
+    font-size: 70px;
+
+
+    margin: 0;
+
+
+    color: #e88bb5;
+
+
+    transition: .3s ease;
+
+
+}
+
+
+.upload-box:hover h2 {
+
+
+    transform: scale(1.15);
+
+
+}
+
+
+.upload-box p {
+
+
+    font-size: 20px;
+
+
+    color: #777;
+
+
+}
+
+
+
+
+
+
+/* 🎵 File Button */
+
+
+input[type="file"] {
+
+
+    margin-top: 18px;
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+input[type="file"]::file-selector-button {
+
+
+    background: #ffd6e8;
+
+
+    color: #e88bb5;
+
+
+    border: none;
+
+
+    border-radius: 25px;
+
+
+    padding: 12px 20px;
+
+
+    cursor: pointer;
+
+
+    transition: .3s ease;
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+input[type="file"]::file-selector-button:hover {
+
+
+    background: #e88bb5;
+
+
+    color: white;
+
+
+}
+
+
+
+
+
+
+/*  Inputs */
+
+
+.music-input,
+.music-description {
+
+
+    width: 100%;
+
+
+    padding: 20px;
+
+
+    margin-top: 25px;
+
+
+    border: 2px solid #ffd6e8;
+
+
+    border-radius: 20px;
+
+
+    font-size: 18px;
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+    box-sizing: border-box;
+
+
+    outline: none;
+
+
+    transition: .3s ease;
+
+
+}
+
+
+.music-input:focus,
+.music-description:focus {
+
+
+    border-color: #e88bb5;
+
+
+    box-shadow: 0 0 18px rgba(232,139,181,.25);
+
+
+}
+
+
+
+
+
+
+/*  Description */
+
+
+.music-description {
+
+
+    height: 180px;
+
+
+    resize: none;
+
+
+}
+
+
+
+
+
+
+/*  Button */
+
+
+.save-button {
+
+
+    margin-top: 35px;
+
+
+    width: 100%;
+
+
+    padding: 20px;
+
+
+    border: none;
+
+
+    border-radius: 35px;
+
+
+    background: linear-gradient(
+        135deg,
+        #ff9ecb,
+        #fad0c4
+    );
+
+
+    color: white;
+
+
+    font-size: 20px;
+
+
+    font-weight: 600;
+
+
+    cursor: pointer;
+
+
+    transition: .3s ease;
+
+
+    box-shadow: 0 10px 25px rgba(232,139,181,.3);
+
+
+}
+
+
+.save-button:hover {
+
+
+    transform: translateY(-5px);
+
+
+    background: linear-gradient(
+        135deg,
+        #e88bb5,
+        #ffb6d9
+    );
+
+
+}
+
+
+
+
+
+
+/*  Placeholder */
+
+
+::placeholder {
+
+
+    color: #b79aac;
+
+
+}
+
+
+
+
+
+
+/*  Animations */
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+
+        opacity: 0;
+
+
+        transform: translateY(30px);
+
+
+    }
+
+
+    to {
+
+
+        opacity: 1;
+
+
+        transform: translateY(0);
+
+
+    }
+
+
+}
+
+
+@keyframes float {
+
+
+    0%,100% {
+
+
+        transform: translateY(0);
+
+
+    }
+
+
+    50% {
+
+
+        transform: translateY(-8px);
+
+
+    }
+
+
+}
+

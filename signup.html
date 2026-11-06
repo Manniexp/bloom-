@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Create Account | Bloom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <style>
+
+        body {
+
+            margin: 0;
+            padding: 0;
+
+            font-family: 'Poppins', sans-serif;
+
+            background-image: url(https://cdn.imageurlgenerator.com/uploads/0d786464-93fe-406c-830f-cd38f3db6941.gif);
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            height: 100vh;
+
+        }
+
+
+        .signup-box {
+
+            background: rgba(255, 255, 255, 0.4);
+
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(255,255,255,0.6);
+
+            padding: 40px;
+
+            width: 300px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+            animation: boxFade 0.8s ease;
+
+            text-align: center;
+
+        }
+
+        .brand-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .brand-logo {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+
+        .signup-box h2 {
+
+            text-align: center;
+
+            margin-bottom: 0px;
+
+            color: #4a4a4a;
+
+            font-size: 32px;
+
+            font-weight: 600;
+
+            animation: titleFade 1s ease;
+
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .tagline b {
+            color: #ffb7c5;
+        }
+
+
+        .user_data {
+
+            width: 100%;
+
+            padding: 12px 15px;
+
+            margin: 10px 0;
+
+            border: 1px solid rgba(255,255,255,0.8);
+
+            border-radius: 12px;
+
+            background: rgba(255,255,255,0.6);
+
+            outline: none;
+
+            font-size: 14px;
+
+            color: #333;
+
+            box-sizing: border-box;
+
+            transition: 0.3s ease;
+
+        }
+
+        .user_data::placeholder {
+            color: #888;
+        }
+
+
+        .user_data:focus {
+
+            border: 1px solid #ffb7c5;
+
+            background: rgba(255,255,255,0.9);
+
+            box-shadow: 0 0 15px rgba(255,182,193,0.8);
+
+        }
+
+
+        .btn {
+
+            width: 100%;
+
+            padding: 12px;
+
+            background: linear-gradient(
+                135deg,
+                #ffb7c5,
+                #ff8da1
+            );
+
+            color: white;
+
+            border: none;
+
+            border-radius: 12px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .btn:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.6);
+
+        }
+
+
+        .login-text {
+
+            text-align: center;
+
+            margin-top: 20px;
+
+            color: #555;
+
+            font-size: 14px;
+
+        }
+
+
+        .login-text a {
+
+            color: #d81b60;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .login-text a:hover {
+
+            color: #ff4081;
+
+            text-shadow: 0 0 10px rgba(255, 182, 193, 0.8);
+
+        }
+
+
+        @keyframes titleFade {
+
+            from {
+
+                opacity: 0;
+
+                transform: translateY(-20px);
+
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform: translateY(0);
+
+            }
+
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="signup-box">
+
+
+        <div class="brand-header">
+            <img src="https://www.image2url.com/r2/default/images/1792295113555-4f1f8295-fd7d-4ae6-a773-64bc879cab3f.png" alt="Bloom Logo" class="brand-logo">
+            <h2>Bloom</h2>
+        </div>
+
+        <p class="tagline">Join <b>Bloom</b> & share your story 🌸</p>
+
+
+        <input
+            type="text"
+            id="signup-username"
+            class="user_data"
+            placeholder="Username"
+            required
+        />
+
+
+        <input
+            type="email"
+            id="signup-email"
+            class="user_data"
+            placeholder="Email"
+            required
+        />
+
+
+        <input
+            type="password"
+            id="signup-password"
+            class="user_data"
+            placeholder="Password"
+            required
+        />
+
+
+        <input
+            type="password"
+            id="signup-confirm-password"
+            class="user_data"
+            placeholder="Confirm Password"
+            required
+        />
+
+
+        <button
+            type="button"
+            class="btn"
+            id="signup-button">
+
+            Create Account 🌸
+
+        </button>
+
+
+        <p class="login-text">
+
+            Already have an account?
+
+            <a href="index.html">
+                Login
+            </a>
+
+        </p>
+
+
+    </div>
+
+
+</body>
+
+<script type="module" src="signup.js"></script>
+
+</html>

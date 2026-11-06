@@ -1,0 +1,298 @@
+body {
+
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #fff8fb,
+        #fff0f6
+    );
+
+    color: #333;
+
+}
+
+
+
+/* 🌸 Header */
+
+.header {
+
+    padding: 25px 50px;
+
+}
+
+
+.home-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+}
+
+
+.logo {
+
+    width: 60px;
+
+    animation: float 3s ease-in-out infinite;
+
+    transition: .3s ease;
+
+}
+
+
+.logo:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+.home-logo span {
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #e88bb5;
+
+}
+
+
+
+/* ✍️ Hero */
+
+.writing-hero {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    animation: fadeUp .8s ease;
+
+}
+
+
+.writing-hero h1 {
+
+    font-size: 60px;
+
+    color: #e88bb5;
+
+    margin-bottom: 10px;
+
+}
+
+
+.writing-hero p {
+
+    font-size: 24px;
+
+    color: #777;
+
+}
+
+
+
+/* 🌸 Writing Area */
+
+.writing-area {
+
+    width: 80%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+/* ✏️ Inputs */
+
+.writing-input {
+
+    width: 100%;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+
+    border: 2px solid #ffd6e8;
+
+    border-radius: 20px;
+
+    font-size: 18px;
+
+    font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: .3s ease;
+
+}
+
+
+.writing-input:focus {
+
+    border-color: #e88bb5;
+
+    box-shadow: 0 0 15px rgba(232,139,181,.25);
+
+}
+
+
+
+/* Story Box */
+
+.writing-textarea {
+
+    width: 100%;
+
+    height: 500px;
+
+    padding: 25px;
+
+    border: 2px solid #ffd6e8;
+
+    border-radius: 25px;
+
+    font-size: 17px;
+
+    font-family: 'Poppins', sans-serif;
+
+    line-height: 1.8;
+
+    resize: vertical;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: .3s ease;
+
+}
+
+
+.writing-textarea:focus {
+
+    border-color: #e88bb5;
+
+    box-shadow: 0 0 18px rgba(232,139,181,.25);
+
+}
+
+
+
+/* 🌸 Button */
+
+#save-writing-button {
+
+    margin-top: 35px;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background: linear-gradient(
+        135deg,
+        #ff9ecb,
+        #fad0c4
+    );
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow: 0 10px 25px rgba(232,139,181,.3);
+
+}
+
+
+#save-writing-button:hover {
+
+    transform: translateY(-5px);
+
+    background: linear-gradient(
+        135deg,
+        #e88bb5,
+        #ffb6d9
+    );
+
+}
+
+
+
+/* 🌸 Placeholder */
+
+::placeholder {
+
+    color: #b79aac;
+
+}
+
+
+
+/* ✨ Animations */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes float {
+
+    0%,100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Bloom</title>
+
+    <link rel="stylesheet" href="profile.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!--Bloom Header-->
+
+<header class="header">
+
+    <a href="dashboard.html" class="home-logo">
+
+        <img src="https://www.image2url.com/r2/default/images/1792295113555-4f1f8295-fd7d-4ae6-a773-64bc879cab3f.png"
+             alt="Bloom Logo"
+             class="logo">
+
+        <span>Bloom</span>
+
+    </a>
+
+
+<!--Navigation-->
+
+<nav class="navigation">
+
+    <a href="dashboard.html">Home</a>
+
+    <a href="feed.html">Bloom</a>
+
+    <a href="create.html">Create</a>
+
+    <a href="profile.html">Profile</a>
+
+</nav>
+
+</header>
+
+
+<!--Profile Section-->
+
+<main class="profile-page">
+
+
+<!-- Profile info -->
+
+<section class="profile-header">
+
+
+        <!-- Profile Picture -->
+
+        <div class="profile-picture">
+
+            <img
+                id="profile-image"
+                src=""
+                alt="Profile Picture">
+
+            <span id="profile-placeholder">🌸</span>
+
+        </div>
+
+
+        <!--Profile Details-->
+
+        <div class="profile-info">
+
+            <h1 id="profile-name">
+                Creator Name
+            </h1>
+
+            <p class="username">
+                @username
+            </p>
+
+            <p class="bio">
+                Creating, exploring, and blooming in the world of art and design.
+            </p>
+
+            <!--Post, Following and Followers-->
+            <div class="profile-stats">
+              <div class="stat-item">
+                <span class="stat-number" id="posts-count">0</span>
+                <span class="stat-label">Posts</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="followers-count">0</span>
+                <span class="stat-label">Followers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" id="following-count">0</span>
+                <span class="stat-label">Following</span>
+              </div>
+            </div>    
+
+            <!--Interests-->
+
+            <div class="interests">
+
+                <span>Art</span>
+
+                <span>Writing</span>
+
+                <span>Games</span>
+
+                <span>Projects</span>
+
+                <span>Music</span>
+
+            </div>
+
+
+            <button
+                id="edit-profile-button">
+
+                Edit Profile ✨
+
+            </button>
+
+        </div>
+
+</section>
+
+
+
+<!--Edit Profile Section-->
+
+<section class="edit-profile" id="edit-profile">
+
+    <h2>✨ Edit Your Profile</h2>
+
+
+    <!-- 🌸 Profile Picture -->
+
+    <label class="profile-picture-label">
+        Profile Picture
+    </label>
+
+    <input
+        type="file"
+        id="edit-profile-picture"
+        accept="image/*">
+
+
+    <input
+        type="text"
+        id="edit-name"
+        placeholder="Your Name">
+
+
+    <input
+        type="text"
+        id="edit-username"
+        placeholder="@username">
+
+
+    <textarea
+        id="edit-bio"
+        placeholder="Tell others about YOU..."></textarea>
+
+
+    <input
+        type="text"
+        id="edit-interests"
+        placeholder="Interests (separate with commas)">
+
+
+    <div class="edit-buttons">
+
+        <button id="save-profile-button">
+            Save Changes 🌸
+        </button>
+
+        <button id="cancel-profile-button">
+            Cancel
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- 🌸 Friend Requests Section -->
+
+<section class="friend-requests-section">
+
+    <h2>Pending Friend Requests 💌</h2>
+
+    <div id="requests-container">
+
+        <!-- Incoming friend requests will load here -->
+
+    </div>
+
+</section>
+
+
+
+<!-- My creations-->
+
+<section class="my-creations">
+
+    <h2>🌸 My Creations</h2>
+
+    <p class="subtitle">
+        Everything bloomed in Bloom.
+    </p>
+
+
+    <!-- Creations Grid -->
+
+    <div class="creation-grid">
+
+
+         <!-- Art -->
+
+        <div class="creation-card">
+
+            <div class="creation-icon">
+                🎨
+            </div>
+
+            <h3>
+                Art
+            </h3>
+
+            <p>
+                Your artwork
+            </p>
+
+        </div>
+
+
+
+        <!-- Writing -->
+
+        <div class="creation-card">
+
+            <div class="creation-icon">
+                ✍️
+            </div>
+
+            <h3>
+                Writing
+            </h3>
+
+            <p>
+                Your writing
+            </p>
+
+        </div>
+
+
+
+        <!-- Music -->
+
+        <div class="creation-card">
+
+            <div class="creation-icon">
+                🎵
+            </div>
+
+            <h3>
+                Music
+            </h3>
+
+            <p>
+                Your songs
+            </p>
+
+        </div>
+
+
+
+        <!-- Games -->
+
+        <div class="creation-card">
+
+            <div class="creation-icon">
+                🎮
+            </div>
+
+            <h3>
+                Games
+            </h3>
+
+            <p>
+                Your games
+            </p>
+
+        </div>
+
+
+
+        <!-- Projects -->
+
+        <div class="creation-card">
+
+            <div class="creation-icon">
+                💡
+            </div>
+
+            <h3>
+                Projects
+            </h3>
+
+            <p>
+                Your projects
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<script type="module" src="profile.js"></script>
+</body>
+
+</html>

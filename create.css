@@ -1,0 +1,242 @@
+body {
+
+    margin:0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #fff8fb,
+        #fff0f6
+
+    );
+
+    color: #333;
+
+
+}
+
+/* 🌸 Bloom Home Logo */
+
+.header {
+
+    padding: 25px 50px;
+}
+
+.home-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+}
+
+.logo {
+
+    width: 55px;
+
+    transition: 0.3s ease
+}
+
+.logo:hover {
+
+    transform: scale(1.08);
+}
+
+.home-logo span{
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    color: #e88bb5;
+}
+
+/* 🌸 Create Title */
+
+.create-hero {
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
+
+.create-hero h1 {
+
+    font-size: 60px;
+
+    color:#e88bb5;
+
+    margin-bottom:  10px;
+}
+
+.create-hero > p {
+
+    font-size: 24px;
+
+    color: #666;
+
+    margin-bottom: 50px;
+}
+
+/* 🎨 Cards */
+
+.create-container {
+
+    display:flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.create-card {
+
+    width: 220px;
+
+    height: 220px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    cursor: pointer;
+    
+    transition: 0.4s ease;
+
+
+}
+
+.create-card h2 {
+    
+    font-size: 45px;
+
+    margin: 0;
+}
+
+.create-card h3 {
+
+    color: #e88bb5;
+
+    font-size: 24px;
+}
+
+.create-card p {
+
+    opacity: 0;
+
+    width: 80%;
+
+    color: #666;
+
+    transform: translateY(10px);
+
+    transition: 0.3s ease;
+
+}
+
+/*  Hover Effect */
+
+.create-card:hover {
+
+    transform: translateY(-10px) scale(1.05);
+}
+
+.create-card:hover p {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+/*  Art */
+.art:hover {
+
+    border: 2px solid #ff9ecb;
+
+    box-shadow:
+    0 15px 35px rgba(255,158,203,0.45);
+
+}
+
+
+/*  Writing */
+.writing:hover {
+
+    border: 2px solid #c8a7ff;
+
+    box-shadow:
+    0 15px 35px rgba(200,167,255,0.45);
+
+}
+
+
+/* 🎵 Music */
+.music:hover {
+
+    border: 2px solid #9edcff;
+
+    box-shadow:
+    0 15px 35px rgba(158,220,255,0.45);
+
+}
+
+
+/* 🎮 Games */
+.games:hover {
+
+    border: 2px solid #a8e6a3;
+
+    box-shadow:
+    0 15px 35px rgba(168,230,163,0.45);
+
+}
+
+
+/* 💡 Projects */
+.projects:hover {
+
+    border: 2px solid #ffd6a5;
+
+    box-shadow:
+    0 15px 35px rgba(255,214,165,0.45);
+
+}
+.create-card:hover h2 {
+
+    transform: scale(1.2);
+
+}
+
+.create-card h2 {
+
+    transition: 0.3s ease;
+
+}
+
+.create-card {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music | Bloom</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="dashboard.html" class="home-logo">
+        <img src="https://www.image2url.com/r2/default/images/1792295113555-4f1f8295-fd7d-4ae6-a773-64bc879cab3f.png" class="logo" alt="Bloom Logo">
+        <span>Bloom</span>
+    </a>
+</header>
+
+<section class="music-hero">
+    <h1>Create Music 🔊</h1>
+    <p>Turn your melodies into a flower.</p>
+</section>
+
+<section class="music-container">
+    <input type="url" id="music-file-url" class="music-input" placeholder="Audio Link (Google Drive, SoundCloud, MP3 URL, etc.)">
+    <input type="text" id="music-title" class="music-input" placeholder="Song Title">
+    <input type="text" id="music-genre" class="music-input" placeholder="Genre">
+    <textarea id="music-description" class="music-description" placeholder="Tell us about your song..."></textarea>
+
+    <button id="save-music-button" type="button" class="save-button">
+        Save Song 🌸
+    </button>
+</section>
+
+<script type="module" src="music.js"></script>
+</body>
+</html>

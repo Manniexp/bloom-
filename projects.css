@@ -1,0 +1,573 @@
+body {
+
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        180deg,
+        #fff8fb,
+        #fff0f6
+    );
+
+    color: #333;
+
+}
+
+
+
+/* 🌸 Header */
+
+.header {
+
+    padding: 25px 50px;
+
+}
+
+
+.home-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    text-decoration: none;
+
+}
+
+
+.logo {
+
+    width: 60px;
+
+    animation: float 3s ease-in-out infinite;
+
+    transition: .3s ease;
+
+}
+
+
+.logo:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+.home-logo span {
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    color: #e88bb5;
+
+}
+
+
+
+/* 💡 Projects Hero */
+
+.projects-hero {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    animation: fadeUp .8s ease;
+
+}
+
+
+.projects-hero h1 {
+
+    font-size: 60px;
+
+    color: #e88bb5;
+
+    margin-bottom: 10px;
+
+}
+
+
+.projects-hero p {
+
+    font-size: 24px;
+
+    color: #777;
+
+}
+
+
+
+/* 💡 Main Projects Container */
+
+.projects-container {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+
+/* 🌸 OUTER UPLOAD CARD */
+
+.project-upload-card {
+
+    width: 100%;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+
+    animation: cardPop .8s ease;
+
+}
+
+
+
+/* 💡 INNER UPLOAD BOX */
+
+.upload-box {
+
+    width: 100%;
+
+    height: 220px;
+
+    box-sizing: border-box;
+
+    border: 3px dashed #f3a6c8;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition: .3s ease;
+
+}
+
+
+.upload-box:hover {
+
+    background: #fff0f6;
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 12px 30px rgba(232, 139, 181, .25);
+
+}
+
+
+
+/* 💡 Project Icon */
+
+.upload-box h2 {
+
+    font-size: 70px;
+
+    margin: 0;
+
+    color: #e88bb5;
+
+    transition: .3s ease;
+
+}
+
+
+.upload-box:hover h2 {
+
+    transform: scale(1.15) rotate(-5deg);
+
+}
+
+
+
+/* 💡 Upload Text */
+
+.upload-box p {
+
+    font-size: 20px;
+
+    color: #777;
+
+    margin: 10px 0;
+
+}
+
+
+
+/* 📁 File Upload */
+
+.upload-box input[type="file"] {
+
+    margin-top: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #777;
+
+}
+
+
+.upload-box input[type="file"]::file-selector-button {
+
+    background: #ffd6e8;
+
+    color: #e88bb5;
+
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 12px 20px;
+
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    font-family: 'Poppins', sans-serif;
+
+    transition: .3s ease;
+
+}
+
+
+.upload-box input[type="file"]::file-selector-button:hover {
+
+    background: #e88bb5;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+}
+
+
+
+/* 💡 Project Inputs */
+
+.projects-input,
+.projects-description {
+
+    width: 100%;
+
+    padding: 20px;
+
+    margin-top: 25px;
+
+    border: 2px solid #ffd6e8;
+
+    border-radius: 20px;
+
+    background: white;
+
+    font-size: 18px;
+
+    font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: .3s ease;
+
+}
+
+
+.projects-input:focus,
+.projects-description:focus {
+
+    border-color: #e88bb5;
+
+    box-shadow:
+        0 0 18px rgba(232, 139, 181, .25);
+
+}
+
+
+
+/* 📝 Project Description */
+
+.projects-description {
+
+    height: 180px;
+
+    resize: none;
+
+}
+
+
+
+/* 🌸 Save Project Button */
+
+.save-button {
+
+    margin-top: 35px;
+
+    width: 100%;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 35px;
+
+    background: linear-gradient(
+        135deg,
+        #ff9ecb,
+        #fad0c4
+    );
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(232, 139, 181, .3);
+
+}
+
+
+.save-button:hover {
+
+    transform: translateY(-5px);
+
+    background: linear-gradient(
+        135deg,
+        #e88bb5,
+        #ffb6d9
+    );
+
+    box-shadow:
+        0 15px 30px rgba(232, 139, 181, .45);
+
+}
+
+
+
+/* 🌸 Placeholder */
+
+::placeholder {
+
+    color: #b79aac;
+
+}
+
+
+
+/* ✨ Animations */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes cardPop {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(.95);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes float {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+}
+
+/* Edit Profile Page */
+
+.edit-profile {
+
+    display:none;
+
+    background: white;
+
+    margin-top: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+    animation:fadeUp .5s ease;
+}
+.edit-profile h2 {
+
+    color: #e88bb5;
+
+    margin-top: 0;
+
+}
+
+
+.edit-profile input,
+.edit-profile textarea {
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-top: 15px;
+
+    border: 2px solid #ffd6e8;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 16px;
+
+    outline: none;
+
+}
+
+edit-profile textarea {
+
+    height: 120px;
+
+    resize: none;
+
+}
+
+.edit-profile input:focus,
+.edit-profile textarea:focus {
+
+    border-color: #e88bb5;
+
+    box-shadow:
+        0 0 15px rgba(232, 139, 181, .2);
+
+}
+
+.edit-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+}
+
+
+#save-profile-button,
+#cancel-profile-button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+}
+
+#save-profile-button {
+
+    background: linear-gradient(
+        135deg,
+        #ff9ecb,
+        #fad0c4
+    );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px rgba(232, 139, 181, .25);
+
+}
+
+#cancel-profile-button {
+
+    background: #ffd6e8;
+
+    color: #e88bb5;
+
+    box-shadow:
+        0 8px 20px rgba(232, 139, 181, .15);
+
+}
+

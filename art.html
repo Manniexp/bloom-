@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art | Bloom</title>
+    <link rel="stylesheet" href="art.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="dashboard.html" class="home-logo">
+            <img src="https://www.image2url.com/r2/default/images/1792295113555-4f1f8295-fd7d-4ae6-a773-64bc879cab3f.png" class="logo" alt="Bloom Logo">
+            <span>Bloom</span>
+        </a>
+    </header>
+
+    <section class="art-hero">
+        <h1>🎨 Create Art</h1>
+        <p>Bring your imagination to life.</p>
+
+        <div class="upload-card">
+            <div class="upload-box">
+                <h2>+</h2>
+                <p>Upload your artwork</p>
+                <input type="file" id="art-upload" accept="image/*">
+                <img id="preview-image" alt="Preview">
+            </div>
+
+            <input type="text" id="art-title" class="art-input" placeholder="Artwork Title">
+
+            <textarea id="art-description" class="art-description" placeholder="Tell us about your creation..."></textarea>
+
+            <button id="save-art-button" class="save-button">Save Creation 🌸</button>
+        </div>
+    </section>
+
+    <script type="module" src="art.js"></script>
+
+</body>
+
+</html>

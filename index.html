@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login | Bloom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        .tagline {
+            color: #ec028af7;
+            font-size: 13px;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .tagline b {
+            color: #FFB7C5; 
+        }
+
+
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://cdn.imageurlgenerator.com/uploads/0d786464-93fe-406c-830f-cd38f3db6941.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Bloom Box  */
+        .login-box {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            padding: 40px 35px;
+            width: 340px;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(216, 27, 96, 0.15);
+            animation: boxFade 0.8s ease;
+            text-align: center;
+        }
+
+        /* Header Logo & Title */
+        .brand-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .brand-logo {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+
+        .login-box h2 {
+            color: #4a4a4a;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            animation: titleFade 1s ease;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        /* Makes the Eye more visible */
+        .password-wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .user_data {
+            width: 100%;
+            padding: 14px 16px;
+            margin: 8px 0;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.6);
+            outline: none;
+            font-size: 14px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .user_data::placeholder {
+            color: #888;
+        }
+
+        .user_data:focus {
+            border: 1px solid #ffb7c5;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 12px rgba(255, 183, 197, 0.5);
+        }
+
+        /* Password Toggle Button */
+        #showPassword {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            font-size: 16px;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        #showPassword:hover {
+            opacity: 1;
+        }
+
+        /* Main Actions Button */
+        .btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 15px;
+            background: linear-gradient(135deg, #ffb7c5, #ff8da1);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 141, 161, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 141, 161, 0.5);
+            background: linear-gradient(135deg, #ffaaeb, #ff7b95);
+        }
+
+        /* Signup Footer Link */
+        .signup-text {
+            margin-top: 22px;
+            color: #555;
+            font-size: 13px;
+        }
+
+        .signup-text a {
+            color: #d81b60;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .signup-text a:hover {
+            color: #ff4081;
+            text-decoration: underline;
+        }
+
+        /* Keyframe Animations */
+        @keyframes titleFade {
+            from {
+                opacity: 0;
+                transform: translateY(-8px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes boxFade {
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        
+        <div class="brand-header">
+            <img src="https://www.image2url.com/r2/default/images/1792295113555-4f1f8295-fd7d-4ae6-a773-64bc879cab3f.png" alt="Bloom Logo" class="brand-logo">
+            <h2>Bloom</h2>
+
+           
+        </div>
+        
+        <p class="tagline">Welcome to <b> Bloom </b> let your story blossom 🌸</p>
+
+        <form id="login-form">
+            
+            <input
+                type="email"
+                id="login-email"
+                class="user_data"
+                placeholder="Email Address"
+                required
+            />
+
+            
+
+            <div class="password-wrapper">
+                <input
+                    type="password"
+                    id="password"
+                    class="user_data"
+                    placeholder="Password"
+                    required
+                />
+                <button type="button" id="showPassword" title="Toggle Password Visibility">
+                    👁️
+                </button>
+            </div>
+
+            <button type="submit" class="btn" id="login-button">
+                Login 🌸
+            </button>
+
+            <p class="signup-text">
+                Don't have an account?
+                <a href="signup.html">Create Account</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    
+
+    <script type="module" src="login.js"></script>
+
+</body>
+
+</html>
